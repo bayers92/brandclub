@@ -15,6 +15,17 @@
 	<link rel="stylesheet" type="text/css" href="stylesheets/examples.css" />
 	<link rel="stylesheet" type="text/css" href="stylesheets/slabtext.css" />
 	<link rel="stylesheet" type="text/css" href="stylesheets/custom.css" />
+	<script src="js/modernizr.js"></script>
+	<script src="js/jquery.min.js"></script>
+
+		<!-- LOADING GRAPHIC PAGE -->
+	<style>
+		/* This only works with JavaScript, 
+		   if it's not present, don't show loader */
+		.no-js #loading_page { display: none;  }
+		.js .loading_page { display: block; background-color: white; position: absolute; left: 0px; top: 0px; height: 100%; width: 100%; z-index: 99999;}
+	</style>
+
 	<style>
 
 	/* Centered texts in each section
@@ -145,8 +156,23 @@
 
 	</script>
 
+	<script>
+		// Wait for window load
+		$(window).load(function() {
+				// Animate loader off screen
+				$("#loading_page").delay(2000).animate({
+					top: -1000
+				}, 400);
+		});
+	</script>	
+
 </head>
 <body>
+
+	<div class = "loading_page" id ="loading_page">
+		<h3 id = "loading_title"> <img src="imgs/logo.png"></img> </h3>
+		<img src="imgs/preloader.gif" id="loader">
+	</div>
 
 	<div id="fullpage">
 
