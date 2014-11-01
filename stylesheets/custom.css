@@ -1,0 +1,13 @@
+.right-side {
+	float: right;
+	width:40%;
+	padding-right: 5%;
+}
+
+.logo {
+	z-index: 9999;
+	float: left;
+	top: 10px;
+	left: 10px;
+	position: fixed;
+}

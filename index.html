@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Brand Club | Personal Websites</title>
+	<meta name="author" content="Brian Ayers" />
+	<meta name="description" content="Get Branded." />
+	<meta name="keywords"  content="Personal website, personal branding, website design, website portfolio" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="shortcut icon" href="favicon.png" />
+
+	<link rel="stylesheet" type="text/css" href="stylesheets/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/examples.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/slabtext.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/custom.css" />
+	<style>
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+		padding: 6% 6% 6% 6%;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	#section0,
+	#section1,
+	#section2,
+	#section3{
+		background-size: cover;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#section0{
+		background-image: url(imgs/example_shaikh.jpg);
+	}
+	#section1 {
+		background-image: url(imgs/bg2_blur.png); 
+	}
+	#section1 h1, h2, a{
+		color: white !important;
+	}
+	#section2{
+		background-image: url(imgs/ayers_example1.jpg);
+	}
+	h1 #highlight {
+		color: #FA584F !important;
+	}
+	#section2 h2 {
+		color: #FA584F !important;
+	}
+	#section2 #slide2 {
+	}
+	#section3{
+		background-image: url(imgs/ayers_example2.jpg);
+		font-weight: bold;
+	}
+	#section3 h1{
+		/*color: white !important;*/
+	}
+	#section4{
+		background-image: url(imgs/bg5.jpg);
+		font-weight: bold;
+	}
+	#section4 #button {
+		border: thick solid #FA584F;
+		color: #FA584F !important;
+	}
+	#section4 #button a{
+		color: #FA584F !important;	
+	}
+	#section4 a{
+		color: #FA584F !important;	
+	}
+	#section4 #button a:hover{
+		color: #C20A00 !important;	
+	}
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				verticalCentered: false,
+				anchors: ['home', 'about', 'examples','pricing','contact'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['Home', 'About', 'Examples', 'Pricing', 'Contact']
+			});
+		});
+	</script>
+
+	<script src="js/jquery.slabtext.min.js"></script>
+	<script>
+	// Function to slabtext the H1 headings
+	function slabTextHeadlines() {
+	    $("h1").slabText({
+	        // Don't slabtext the headers if the viewport is under 380px
+	        "viewportBreakpoint":380
+	    });
+	};
+
+	// Called one second after the onload event for the demo (as I'm hacking the
+	// fontface load event a bit here)
+
+	// Please do not do this in a production environment - you should really use
+	// google WebFont loader events (or something similar) for better control
+	$(window).load(function() {
+	    // So, to recap... don't actually do this, it's nasty!
+	    setTimeout(slabTextHeadlines, 1000);
+	});
+	</script>   
+
+	<!-- Google Analytics -->
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-56254404-1', 'auto');
+	ga('send', 'pageview');
+
+	</script>
+
+</head>
+<body>
+
+<div id="fullpage">
+
+	<div class = "logo">
+			<img src="imgs/logo.png"></img>
+	</div>
+
+	<div class="section " id="section0">
+		<div class = "right-side">
+			<h1>Define </h1>
+			<h1>your </h1>
+			<h1>Brand</h1>
+		</div>
+	</div>
+
+
+	<div class="section" id="section1">
+		<h1> 56% of all hiring managers are more impressed by a candidate’s personal website than any other personal branding tool—however, only 7% of job seekers actually have a personal website</h1>
+		<h2> <a href="http://www.forbes.com/sites/jacquelynsmith/2013/04/26/why-every-job-seeker-should-have-a-personal-website-and-what-it-should-include/"> -forbes.com </a></h2>
+	</div>
+
+
+	<div class="section" id="section2">
+		<div class="slide" id="slide1">
+			<h1>We build websites to convey </h1><h1 id="highlight">your personality</h1>
+		</div>
+		<div class="slide" id="slide2">
+			<div class= "intro">
+				<a href="http://www.brianayers.me"><h1>brianayers.me</h1></a>
+			</div>
+		</div>
+		<div class="slide" id="slide3">
+			<div class= "intro">
+				<a href="http://www.moshaikh.com"><h1>moshaikh.com</h1></a>
+			</div>
+		</div>
+		<div class="slide" id="slide4">
+			<div class= "intro">
+				<a href="http://www.timhayward.me"><h1>timhayward.me</h1></a>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="section" id="section3">
+		  	<h1>$200 Total</h1>
+	  		<p>Fully customized personal website • Domain name of your choice • Unlimited updates • Integration with social media • Live blog </p> 
+	</div>
+
+	<div class="section" id="section4">
+		<h1> Ready for greatness? </h1>
+		<h1 id= "button">
+			<a href="mailto:info@brandclub.co">Get Started </a>
+		</h1>
+		<p> </p>
+		<p> Just send us your resume </p>
+		<a href="mailto:info@brandclub.co?subject=email%20subject">info@brandclub.co </a>
+	</div>
+</div>
+
+</body>
+</html>
