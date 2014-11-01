@@ -1,0 +1,69 @@
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+text-align:center;
+padding: 6% 6% 6% 6%;
+}
+
+
+/* Backgrounds will cover all the section
+* --------------------------------------- */
+#section0,
+#section1,
+#section2,
+#section3{
+	background-size: cover;
+}
+
+/* Defining each section background and styles
+* --------------------------------------- */
+#section0{
+	background-image: url(imgs/example_shaikh.jpg);
+}
+#section1 {
+	background-image: url(imgs/bg2_blur.png); 
+}
+#section1 h1, h2, a{
+	color: white !important;
+}
+#section2{
+	background-image: url(imgs/ayers_example1.jpg);
+}
+h1 #highlight {
+	color: #FA584F !important;
+}
+#section2 h2 {
+	color: #FA584F !important;
+}
+#section2 #slide2 {
+}
+#section3{
+	background-image: url(imgs/ayers_example2.jpg);
+	font-weight: bold;
+}
+#section3 h1{
+	/*color: white !important;*/
+}
+#section4{
+	background-image: url(imgs/bg5.jpg);
+	font-weight: bold;
+}
+#section4 #button {
+	border: thick solid #FA584F;
+	color: #FA584F !important;
+}
+#section4 #button a{
+	color: #FA584F !important;	
+}
+#section4 a{
+	color: #FA584F !important;	
+}
+#section4 #button a:hover{
+	color: #C20A00 !important;	
+}
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+	color: #fff;
+}

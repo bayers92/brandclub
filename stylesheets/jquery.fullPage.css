@@ -146,7 +146,7 @@ html, body {
 }
 #fp-nav li .active span,
 .fp-slidesNav .active span {
-    background: #333;
+    background: white;
 }
 #fp-nav span,
 .fp-slidesNav span {
@@ -154,7 +154,7 @@ html, body {
     left: 2px;
     width: 8px;
     height: 8px;
-    border: 1px solid #000;
+    border: 1px solid white;
     background: rgba(0, 0, 0, 0);
     border-radius: 50%;
     position: absolute;
@@ -163,7 +163,7 @@ html, body {
 .fp-tooltip {
     position: absolute;
     top: -2px;
-    color: #fff;
+    color: white;
     font-size: 14px;
     font-family: arial, helvetica, sans-serif;
     white-space: nowrap;
