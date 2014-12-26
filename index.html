@@ -13,8 +13,6 @@
 	<link rel="shortcut icon" href="favicon.png" />
 
 	<link rel="stylesheet" type="text/css" href="stylesheets/jquery.fullPage.css" />
-	<link rel="stylesheet" type="text/css" href="stylesheets/examples.css" />
-	<link rel="stylesheet" type="text/css" href="stylesheets/slabtext.css" />
 	<link rel="stylesheet" type="text/css" href="stylesheets/custom.css" />
 	<link rel="stylesheet" type="text/css" href="stylesheets/form.css" />
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
@@ -36,7 +34,6 @@
 	* --------------------------------------- */
 	.section{
 		text-align:center;
-		padding: 6% 6% 6% 6%;
 	}
 
 
@@ -45,7 +42,8 @@
 	#section0,
 	#section1,
 	#section2,
-	#section3{
+	#section3,
+	#section4{
 		background-size: cover;
 	}
 
@@ -54,23 +52,57 @@
 	#section0{
 		background-image: url(imgs/example_shaikh.jpg);
 	}
+
+	#section0 {
+
+	}
+
+
+
 	#section1 {
 		background-image: url(imgs/bg2_blur.png); 
 	}
 	#section1 h1, h2, a{
 		color: white !important;
 	}
+
+
+
 	#section2{
+		/*background-image: url(imgs/ayers_example1.jpg);*/
+	}
+
+	#slide1{
 		background-image: url(imgs/ayers_example1.jpg);
+		background-size: cover;
 	}
-	h1 #highlight {
-		color: #FA584F !important;
+	#slide2{
+		background-image: url(imgs/shaikh_example.jpg);
+		background-size: cover;
 	}
+	#slide3{
+		background-image: url(imgs/hayward_example.jpg);
+		background-size: cover;
+	}
+	#slide4{
+		background-image: url(imgs/dani_example.jpg);
+		background-size: cover;
+	}
+	#slide5{
+		background-image: url(imgs/ayers_example.jpg);
+		background-size: cover;
+	}
+
+
+
+
 	#section2 h2 {
 		color: #FA584F !important;
 	}
 	#section2 #slide2 {
 	}
+
+
 	#section3{
 		background-image: url(imgs/ayers_example2.jpg);
 		font-weight: bold;
@@ -78,6 +110,8 @@
 	#section3 h1{
 		/*color: white !important;*/
 	}
+
+
 	#section4{
 		background-image: url(imgs/bg5.jpg);
 		font-weight: bold;
@@ -101,11 +135,6 @@
 		color: #C20A00 !important;	
 	}
 
-	/* Bottom menu
-	* --------------------------------------- */
-	#infoMenu li a {
-		color: #fff;
-	}
 	</style>
 
 	<!--[if IE]>
@@ -118,7 +147,7 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
 		<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-		<script type="text/javascript" src="js/examples.js"></script>
+
 
 		<script type="text/javascript">
 		$(document).ready(function() {
@@ -130,28 +159,7 @@
 				navigationTooltips: ['Home', 'About', 'Examples', 'Pricing', 'Contact']
 			});
 		});
-		</script>
-
-		<script src="js/jquery.slabtext.min.js"></script>
-		<script>
-	// Function to slabtext the H1 headings
-	function slabTextHeadlines() {
-		$("h1").slabText({
-	        // Don't slabtext the headers if the viewport is under 380px
-	        "viewportBreakpoint":380
-	    });
-	};
-
-	// Called one second after the onload event for the demo (as I'm hacking the
-	// fontface load event a bit here)
-
-	// Please do not do this in a production environment - you should really use
-	// google WebFont loader events (or something similar) for better control
-	$(window).load(function() {
-	    // So, to recap... don't actually do this, it's nasty!
-	    setTimeout(slabTextHeadlines, 0);
-	});
-	</script>   
+		</script>  
 
 	<!-- Google Analytics -->
 	<script>
@@ -169,7 +177,7 @@
 		// Wait for window load
 		$(window).load(function() {
 				// Animate loader off screen
-				$("#loading_page").delay(2000).animate({
+				$("#loading_page").delay(000).animate({
 					top: -10000
 				}, 400);
 		});
@@ -192,88 +200,125 @@
 		</div>
 
 		<div class="section " id="section0">
+			<div class = "bg-overlay"></div>
 			<div class = "right-side">
-				<h1>Define </h1>
-				<h1>your </h1>
+				<h1>Define</h1>
+				<h1>your</h1>
 				<h1>Brand</h1>
 			</div>
 		</div>
 
 
 		<div class="section" id="section1">
-			<h1> 56% of all hiring managers are more impressed by a candidate’s personal website than any other personal branding tool—however, only 7% of job seekers actually have one</h1>
-			<h2> <a href="http://www.forbes.com/sites/jacquelynsmith/2013/04/26/why-every-job-seeker-should-have-a-personal-website-and-what-it-should-include/"> -forbes.com </a></h2>
+			<div class = "bg-overlay"></div>
+			<div class = "quote">
+				<h1> "56% of all hiring managers are more impressed by a candidate’s personal website than any other personal branding tool—however, only 7% of job seekers actually have a personal website"</h1>
+				<h2> <a href="http://www.forbes.com/sites/jacquelynsmith/2013/04/26/why-every-job-seeker-should-have-a-personal-website-and-what-it-should-include/"> -Forbes.com </a></h2>
+			</div>
 		</div>
 
 
 		<div class="section" id="section2">
 			<div class="slide" id="slide1">
-				<h1>We build websites to convey </h1><h1 id="highlight">your personality</h1>
-			</div>
-			<div class="slide" id="slide2">
-				<div class= "intro">
-					<a href="http://www.moshaikh.com" target="_blank"><h1>moshaikh.com</h1></a>
+				<div class = "bg-overlay"></div>
+				<div class ="left_side">
+					<div class = "header">
+						<h1>We build websites to convey your personality</h1>
+					</div>
+					<div class = "wording">
+						<p> Employers want to see more than just your resume - they want to see who you are as a person. </p
+							>
+						<p> Your website is a space to expand on your favorite projects and show what you are interested in outside of work. </p>
+
+						<p> <a href= "#examples/1"> Check out these examples for ideas! </a></p>
+
+					</div>
 				</div>
 			</div>
+			<div class="slide" id="slide2">
+				<div class ="left_side">
+					<div class = "example">
+						<a href="http://www.moshaihk.com"> Moshaihk.com </a>
+					</div>
+				</div>
+			</div>
+
 			<div class="slide" id="slide3">
-				<div class= "intro">
-					<a href="http://www.timothyhayward.com" target="_blank"><h1>timothyhayward</h1></a>
+				<div class ="left_side">
+					<div class = "example">
+						<a href="http://www.timothyhayward.com"> TimothyHayward.com </a>
+					</div>
+				</div>
+			</div>
+
+			<div class="slide" id="slide4">
+				<div class ="left_side">
+					<div class = "example">
+						<a href="http://www.danielleayers.me"> DanielleAyers.me </a>
+					</div>
 				</div>
 			</div>
 			<div class="slide" id="slide4">
-				<div class= "intro">
-					<a href="http://www.brianayers.me" target="_blank"><h1>brianayers.me</h1></a>
+				<div class ="left_side">
+					<div class = "example">
+						<a href="http://www.brianayers.me"> BrianAyers.me </a>
+					</div>
 				</div>
 			</div>
+
+
 		</div>
 
 
 		<div class="section" id="section3">
-			<h1>$200 Total</h1>
-			<p>Fully customized personal website • Domain name of your choice • Unlimited updates • Integration with social media • Live blog </p> 
+			<div class = "bg-overlay"></div>
+			<div class ="left_side">
+				<p id = "gray">
+					What's included:
+				</p>
+				<p id ="white">
+				   • Fully customized personal website <br/>
+				   • Domain name of your choice <br/>
+				   • Unlimited updates <br/>
+				   • Integration with social media <br/>
+				   • Live blog you control directly<br/>
+				   • Website and email hosting for 5 years 
+
+   				<div class = "header">
+					<h1>$200 Total</h1>
+				</div>
+			</div>
 		</div>
 
 
 
 		<div class="section" id="section4">
-			<div class = "container_container">
-				<h1> Ready for greatness? </h1>
-				<p> Send us your email to start the process </p>
-				<p> We'll email you back within 24 hours with more info </p>
-				<p> You'll have your full website in less than a week! </p>
+			<div class = "bg-overlay"></div>
+			<div class ="left_side">
+				<div class = "container_container">
+					<h1> Ready for greatness? </h1>
+					<p> Send us your email to start the process. </p>
+					<p> We'll email you back within 24 hours for more info. </p>
+					<p> You'll have your full website online in less than a week! </p>
 
+					<div class = "form_container">
+						<form class= "pure-form" method="POST" name="contactform" action="contact-form-handler.php"> 
+							<fieldset>
+						        <input type="text" name="name" placeholder="Your Name" required>
+						        <input type="email" name="email" placeholder="Email Address" required><br/>
+						        <br/>
+						        <button type="submit" class="pure-button pure-button-primary">I'm Interested</button>
+						    </fieldset>
+						</form>
 
-				<div class = "form_container">
-<!-- 					<form class="pure-form" action:"mailto:brian@gmail.com" method="post" enctype="text/plain">
-					    <fieldset>
-					        <input type="text" placeholder="Your Name" required>
-					        <input type="email" placeholder="Email Address" required><br/><br/>
-					        <input id="filebutton" name="filebutton" class="input-file" type="file">
-					        <br/><br/>
-					        <button type="submit" class="pure-button pure-button-primary">Submit</button>
-					    </fieldset>
-					</form> -->
+						<script language="JavaScript">
+						var frmvalidator  = new Validator("contactform");
+						frmvalidator.addValidation("name","req","Please provide your name"); 
+						frmvalidator.addValidation("email","req","Please provide your email"); 
+						frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+						</script>
 
-
-					<form class= "pure-form" method="POST" name="contactform" action="contact-form-handler.php"> 
-						<fieldset>
-					        <input type="text" name="name" placeholder="Your Name" required>
-					        <input type="email" name="email" placeholder="Email Address" required><br/>
-					        <br/>
-					        <button type="submit" class="pure-button pure-button-primary">Submit</button>
-					    </fieldset>
-					</form>
-
-					<script language="JavaScript">
-					// Code for validating the form
-					// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
-					// for details
-					var frmvalidator  = new Validator("contactform");
-					frmvalidator.addValidation("name","req","Please provide your name"); 
-					frmvalidator.addValidation("email","req","Please provide your email"); 
-					frmvalidator.addValidation("email","email","Please enter a valid email address"); 
-					</script>
-
+					</div>
 				</div>
 			</div>
 		</div>
