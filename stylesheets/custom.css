@@ -140,8 +140,6 @@ a {
 	font-size: 120%;
 }
 
-
-
 .bg-overlay{
 	height: 100%;
 	width: 100%;
@@ -152,3 +150,118 @@ a {
 }
 
 
+
+/*
+*
+*
+*
+*
+* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	/*Home Page*/
+
+	#section0 .right-side {
+		float: left;
+		width:50%;
+		padding-left: 5%;
+		padding-top: 35%;
+	}
+
+	#section0 .right-side h1{
+		text-align: left;
+		font-family: 'LeagueGothicRegular', "Impact", Charcoal, Arial Black, Gadget, Sans serif;
+		text-transform: uppercase;
+		color: #FA584F;
+		font-weight: normal;
+		word-spacing: 0px;
+		letter-spacing: -0.75px;
+		font-size: 10em;
+		display: block;
+		line-height: 0.5;
+		white-space: nowrap;
+	}
+
+
+
+
+	/*About Page*/
+	#section1 {
+		background-image: url(imgs/bg2_blur.png); 
+	}
+	#section1 h1, h2, a{
+		color: white !important;
+	}
+	#section1 .quote {
+		padding: 10% 6% 6% 6%;
+		font-size: 240%;
+	}
+
+
+
+	/*Examples Page*/
+	#section2 .header{
+		padding-top: 6%;
+		text-transform: uppercase;
+		color: white;
+		font-size: 140%;
+	}
+	#section2 .left_side{
+		float: left;
+		width: 90%;
+		padding-left: 5%;
+		padding-top: 10%;
+	}
+	#section2 .wording p {
+		margin: 1em 0;
+		color: white;
+		font-size: 2.5em;
+		line-height: 1.5em;
+	}
+	#section2 .example {
+		font-size: 3.5em;
+		padding-top: 80%;
+	}
+
+	/*Pricing Page*/
+	#section3 .header{
+		padding-top: 6%;
+		text-transform: uppercase;
+		color: white;
+	}
+	#section3 .left_side{
+		float: left;
+		width: 90%;
+		padding-left: 5%;
+		padding-top:10%;
+		text-align: left;
+	}
+	#section3 p#white {
+		margin: 1em 0;
+		color: white;
+		font-size: 2.5em;
+	}
+	#section3 p#gray {
+		margin: 1em 0;
+		color: white;
+		text-decoration: underline;
+		font-size: 1.7em;
+	}
+
+
+
+	/*Contact Page*/
+	#section4 .left_side{
+		float: left;
+		width:90%;
+		padding-left: 5%;
+		padding-top:30%;
+		text-align: left;
+		color:white;
+		line-height: 1.8em;
+		font-size: 120%;
+	}
+	#section4 p{
+		margin-top: 30px;
+		margin-bottom: 50px;
+	}
+}
